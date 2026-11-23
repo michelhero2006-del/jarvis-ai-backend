@@ -1,0 +1,2 @@
+# JARVIS Android build
+This Android wrapper uses Capacitor. The APK is built by GitHub Actions, not included in source. The workflow is at Actions → Build JARVIS Android APK → Run workflow. Download the APK artifact after a successful run. In the app, set the backend URL to this repository's deployed Worker URL. Configure OPENAI_API_KEY and FAL_KEY as Worker secrets, never in the Android app. This app uses the existing backend contract: /api/chat expects {message,history}, /api/image and /api/video expect {prompt}.
